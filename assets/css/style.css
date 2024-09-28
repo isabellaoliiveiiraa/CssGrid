@@ -1,0 +1,38 @@
+
+.logo{
+    display: flex;
+    background-color: #B500E5;
+    justify-content: space-between;
+
+}
+
+.titulo{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+   color:  aliceblue;
+  margin-left: 40px;
+  font-size: 1.5em;
+}
+
+
+.menu{
+display: flex;
+align-items: center;
+list-style: none;
+background-color:#B500E5;
+justify-content:;
+flex-direction: row-reverse;
+gap: 50px;
+padding: 16px;
+height: 20px;
+font-size: 20px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu a{
+    text-decoration: none;
+    color: aliceblue;
+    align-items: center;
+}
