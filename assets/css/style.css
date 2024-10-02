@@ -1,3 +1,12 @@
+body{
+    background-color: aliceblue;
+ color: black;
+ line-height: 1.6;
+ width: 100%;
+ height: 100%;
+}
+
+
 
 .logo{
     display: flex;
@@ -12,7 +21,7 @@
     font-weight: <weight>;
     font-style: normal;
    color:  aliceblue;
-  margin-left: 40px;
+  margin-left: 30px;
   font-size: 1.5em;
 }
 
@@ -26,7 +35,7 @@ justify-content:;
 flex-direction: row-reverse;
 gap: 50px;
 padding: 16px;
-height: 20px;
+height: 1px;
 font-size: 20px;
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -35,4 +44,95 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     text-decoration: none;
     color: aliceblue;
     align-items: center;
+}
+
+.container {
+    max-width: 1200px; /* Limita a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    display: grid; /* Ativa o grid layout */
+    grid-template-columns: 0.7fr 1fr 1fr; /* Define 3 colunas, a primeira menor */
+    grid-template-rows: auto auto auto; /* Altura automática para cada linha */
+    grid-template-areas:
+        "sidenav item1 item2"
+        "sidenav item3 item4"
+        "footer footer footer"; /* Define as áreas nomeadas para cada elemento */
+    gap: 20px; /* Espaçamento entre as áreas do grid */
+    padding: 20px;
+    border: 1px solid #fff; /* Bordas para destacar o contêiner */
+}
+
+.sidenav {
+    grid-area: sidenav; /* Define a área do grid que a barra lateral ocupará */
+    background-color: #4f0070; /* Fundo azul escuro */
+    color: #F0F4FF; /* Cor do texto em azul claro */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 20px;
+}
+
+
+.item:nth-child(2) { grid-area: item1; }
+.item:nth-child(3) { grid-area: item2; }
+.item:nth-child(4) { grid-area: item3; }
+.item:nth-child(5) { grid-area: item4; }
+
+.item {
+    background-color: #f4cffe;
+    border-radius: 20px; /* Arredonda os cantos do item */
+    display: flex; /* Organiza o conteúdo do item como um flex container */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: #B500E5;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px; /* Aumenta o tamanho do rodapé */
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+.footer .social-icons {
+    display: flex; /* Organiza os ícones de redes sociais em linha */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Ícones arredondados */
+}
+
+.item img{
+    width: 280px;
+    border-radius: 10px;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.sidenav a{
+    display: flex;
+align-items: center;
+list-style: none;
+justify-content:;
+gap: 50px;
+padding: 16px;
+height: 10px;
+font-size: 20px;
+text-decoration: none;
+color: aliceblue;
 }
